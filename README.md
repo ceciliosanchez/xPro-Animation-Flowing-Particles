@@ -6,7 +6,7 @@ This project demonstrates how to create animated particles in JavaScript that ro
 
 ## Functionality
 
-Balls rotate from the left to right.</br>
+Particles rotate from the left to right.</br>
 When they hit the walls, they change in size.</br>
 
 ## Files
