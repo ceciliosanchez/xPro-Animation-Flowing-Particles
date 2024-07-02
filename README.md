@@ -18,7 +18,7 @@ one-dimension-motion.js: Contains functions to create and manipulate the particl
 
 Clone the repository.</br>
 Open one-dimension-motion.html in a web browser.</br>
-Preview: <a href="https://ceciliosanchez.com/github/xpro/moving_particles/one-dimension-motion.html">Moving Particles</a>
+Preview: <a href="https://ceciliosanchez.com/github/xpro/moving_particles/one-dimension-motion.html" target="_blank">Moving Particles</a>
 
 ## Support
 
