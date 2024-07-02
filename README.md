@@ -11,8 +11,8 @@ When they hit the walls, they change in size.</br>
 
 ## Files
 
-one-dimension-motion.html: Main HTML file that includes.</br>
-one-dimension-motion.js: Contains functions to create and manipulate ball elements.
+one-dimension-motion.html: Main HTML file that includes the canvas and scripts.</br>
+one-dimension-motion.js: Contains functions to create and manipulate the particle elements and its effects.
 
 ## How to run
 
