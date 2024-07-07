@@ -1,28 +1,34 @@
 var balls = [];
-var numberOfBalls = 7; // Add more balls
+var numberOfBalls = 50; // Increase the number of balls
 var initialBallSize = 25;
 var toggledBallSize = 35;
-var colors = [
-  'rgb(241, 60, 15)',  // Ball 1
-  'rgb(248, 151, 33)', // Ball 2
-  'rgb(250, 234, 52)', // Ball 3
-  'rgb(190, 247, 144)',// Ball 4
-  'rgb(39, 210, 45)',  // Ball 5
-  'rgb(41, 183, 254)', // Ball 6
-  'rgb(154, 86, 232)', // Ball 7 
-];
-var velocities = [3, 3.5, 4, 4.5, 5, 5.5, 6]; // Different speeds for each ball
+
+// Generate a rainbow color based on position
+function getRainbowColor(position, total) {
+    var hue = Math.floor((position / total) * 360);
+    return 'hsl(' + hue + ', 100%, 50%)';
+}
+
+function getRandomVelocity() {
+    return (Math.random() * 4) + 2; // Random velocity between 2 and 6
+}
 
 function createBalls() {
     var container = document.getElementById('balls-container');
     for (var i = 0; i < numberOfBalls; i++) {
         var ball = document.createElement('div');
         ball.className = 'ball';
-        ball.style.top = (i * 50) + 'px';
-        ball.style.left = '0px';
-        ball.style.background = colors[i % colors.length]; // Assign a rainbow color
+        ball.style.top = (i * window.innerHeight / numberOfBalls) + 'px'; // Evenly distribute top positions
+        ball.style.left = (Math.random() * window.innerWidth) + 'px';
+        ball.style.background = getRainbowColor(i, numberOfBalls); // Rainbow color based on position
         container.appendChild(ball);
-        balls.push({ element: ball, velocityX: velocities[i % velocities.length], positionX: 0, directionX: 1, size: initialBallSize });
+        balls.push({ 
+            element: ball, 
+            velocityX: getRandomVelocity(), 
+            positionX: parseFloat(ball.style.left), 
+            directionX: Math.random() < 0.5 ? 1 : -1, // Random initial direction
+            size: initialBallSize 
+        });
     }
 }
 
