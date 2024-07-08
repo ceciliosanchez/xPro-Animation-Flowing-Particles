@@ -43,9 +43,14 @@ function moveBall(ball) {
     ball.positionX += ball.velocityX * ball.directionX;
     ball.element.style.left = ball.positionX + 'px';
 
-    if (ball.positionX >= window.innerWidth - ball.element.offsetWidth || ball.positionX <= 0) {
-        ball.directionX *= -1; // Change direction when hitting the edge
-        changeBallSize(ball); // Change size when hitting the edge
+    if (ball.positionX >= window.innerWidth - ball.element.offsetWidth) {
+        ball.positionX = window.innerWidth - ball.element.offsetWidth; // Prevent overshooting
+        ball.directionX *= -1; // Change direction
+        changeBallSize(ball); // Change size
+    } else if (ball.positionX <= 0) {
+        ball.positionX = 0; // Prevent overshooting
+        ball.directionX *= -1; // Change direction
+        changeBallSize(ball); // Change size
     }
 }
 
