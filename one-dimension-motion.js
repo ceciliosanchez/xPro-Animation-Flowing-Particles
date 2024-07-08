@@ -2,15 +2,12 @@ var balls = [];
 var numberOfBalls = 50; // Increase the number of balls
 var initialBallSize = 25;
 var toggledBallSize = 35;
+var commonVelocity = 4; // Common speed for all balls
 
 // Generate a rainbow color based on position
 function getRainbowColor(position, total) {
     var hue = Math.floor((position / total) * 360);
     return 'hsl(' + hue + ', 100%, 50%)';
-}
-
-function getRandomVelocity() {
-    return (Math.random() * 4) + 2; // Random velocity between 2 and 6
 }
 
 function createBalls() {
@@ -24,7 +21,7 @@ function createBalls() {
         container.appendChild(ball);
         balls.push({ 
             element: ball, 
-            velocityX: getRandomVelocity(), 
+            velocityX: commonVelocity, 
             positionX: parseFloat(ball.style.left), 
             directionX: Math.random() < 0.5 ? 1 : -1, // Random initial direction
             size: initialBallSize 
