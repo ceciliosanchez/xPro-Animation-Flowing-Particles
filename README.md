@@ -20,6 +20,8 @@ Clone the repository.</br>
 Open one-dimension-motion.html in a web browser.</br>
 Preview: <a href="https://ceciliosanchez.com/github/xpro/moving_particles/one-dimension-motion.html" target="_blank">Moving Particles</a>
 
+![Animation Screenshot](screenshot.png)
+
 ## Support
 
 Reach out at http://ceciliosanchez.com/contact/
