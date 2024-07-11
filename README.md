@@ -1,6 +1,6 @@
 # Project for MIT xPro Full Stack Developer course
 
-## Moving Particles
+## Flowing Particles
 
 This project demonstrates how to create animated particles in JavaScript that rotate in a loop.
 
@@ -18,9 +18,7 @@ one-dimension-motion.js: Contains functions to create and manipulate the particl
 
 Clone the repository.</br>
 Open one-dimension-motion.html in a web browser.</br>
-Preview: <a href="https://ceciliosanchez.com/github/xpro/moving_particles/one-dimension-motion.html" target="_blank">Moving Particles</a>
-
-![Animation Screenshot](img/screenshot.png)
+Preview: <a href="https://ceciliosanchez.com/github/xpro/moving_particles/one-dimension-motion.html" target="_blank">Flowing Particles![Animation Screenshot](img/screenshot.png)</a>
 
 ## Support
 
