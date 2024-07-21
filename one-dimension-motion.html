@@ -6,10 +6,18 @@
     <title>Particle Motion</title>
     <style>
         body {
-            background: url('img/universe-where-stars-are-formed.jpg') no-repeat;
-            background-size: cover;
+            background: linear-gradient(0deg, #5c5c5c, #000000);
+            background-size: 400% 400%;
+            animation: gradientMove 15s ease infinite;
             margin: 0;
             overflow: hidden;
+            height: 100vh;
+            width: 100vw;
+        }
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
         .ball {
             z-index: 5;
