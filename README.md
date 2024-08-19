@@ -1,4 +1,4 @@
-# Project for MIT xPro Full Stack Developer course
+# Full Stack Developer Exercise
 
 ## Flowing Particles
 
@@ -18,7 +18,7 @@ This project demonstrates how to create animated particles in JavaScript that ro
 
 1. Clone the repository.
 2. Open one-dimension-motion.html in a web browser.
-3. Preview: <a href="https://ceciliosanchez.com/github/xpro/moving_particles/one-dimension-motion.html" target="_blank">Flowing Particles![Animation Screenshot](img/screenshot.png)</a>
+3. Preview: <a href="https://ceciliosanchez.com/github/xpro/flowing_particles/one-dimension-motion.html" target="_blank">Flowing Particles![Animation Screenshot](img/screenshot.png)</a>
 
 ## Support
 
